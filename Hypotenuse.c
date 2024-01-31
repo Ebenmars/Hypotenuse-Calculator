@@ -6,14 +6,18 @@ int main()
 
     double A, B, C;
 
-    printf("Enter side A: \n");
+    double resultOfAdd;
+
+    printf("\nEnter side A: \n");
     scanf("%lf", &A);
 
     printf("Enter side B: \n");
     scanf("%lf", &B);
 
-    printf("Enter side C: \n");
-    scanf("%lf", &C);
+    resultOfAdd = pow(A, 2) + pow(B, 2);
+    C = sqrt(resultOfAdd);
+
+    printf("The Hypotenuse('C') of this Triangle is: %.2lf\n\n", C);
 
     return 0;
 }
